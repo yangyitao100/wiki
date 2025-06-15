@@ -1,0 +1,53 @@
+- title: 介绍
+  url: /
+
+- title: 技术文档
+  url: /docs/tech/
+  children:
+    - title: 技术概览
+      url: /docs/tech/
+    - title: Docker 相关
+      url: /docs/tech/docker/
+    - title: Linux 操作
+      url: /docs/tech/linux/
+    - title: 编程笔记
+      url: /docs/tech/programming/
+    - title: 开发工具
+      url: /docs/tech/tools/
+
+- title: 工作记录
+  url: /docs/work/
+  children:
+    - title: 工作概览
+      url: /docs/work/
+    - title: 项目记录
+      url: /docs/work/projects/
+    - title: 会议纪要
+      url: /docs/work/meetings/
+    - title: 学习计划
+      url: /docs/work/learning/
+    - title: 问题解决
+      url: /docs/work/troubleshooting/
+
+- title: 资源收集
+  url: /docs/resources/
+  children:
+    - title: 资源概览
+      url: /docs/resources/
+    - title: 实用工具
+      url: /docs/resources/tools/
+    - title: 参考链接
+      url: /docs/resources/links/
+    - title: 书籍推荐
+      url: /docs/resources/books/
+    - title: 课程推荐
+      url: /docs/resources/courses/
+
+- title: 其他
+  children:
+    - title: 关于我
+      url: /docs/about/
+    - title: 更新日志
+      url: /docs/changelog/
+    - title: FAQ
+      url: /docs/faq/ 

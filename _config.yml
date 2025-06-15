@@ -12,15 +12,26 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
-# GitBook 配置
-gitbook:
-  pdf_file: false
-  download: false
-  sharing:
-    github: true
-    edit: true
-  
-# 导航配置
+# GitBook 特定配置
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# 默认设置
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "docs"
+      type: "pages"
+    values:
+      layout: "default"
+
+# 导航配置  
 toc:
   enabled: true
   h_min: 1
