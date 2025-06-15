@@ -1,0 +1,69 @@
+{
+  "title": "my-knowledge-base",
+  "author": "Your Name",
+  "description": "个人学习和工作笔记",
+  "language": "zh-hans",
+  "gitbook": "3.2.3",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  },
+  "plugins": [
+    "search-pro",
+    "back-to-top-button",
+    "expandable-chapters-small",
+    "insert-logo",
+    "github-buttons",
+    "edit-link",
+    "copy-code-button",
+    "prism",
+    "-highlight",
+    "splitter",
+    "sharing-plus",
+    "tbfed-pagefooter"
+  ],
+  "pluginsConfig": {
+    "insert-logo": {
+      "url": "assets/images/logo.png",
+      "style": "background: none; max-height: 30px;"
+    },
+    "github-buttons": {
+      "buttons": [{
+        "user": "yangyitao",
+        "repo": "my-knowledge-base",
+        "type": "star",
+        "size": "small",
+        "count": true
+      }]
+    },
+    "edit-link": {
+      "base": "https://github.com/yangyitao/my-knowledge-base/edit/main",
+      "label": "编辑此页"
+    },
+    "sharing-plus": {
+      "douban": false,
+      "facebook": false,
+      "google": false,
+      "hatenaBookmark": false,
+      "instapaper": false,
+      "line": false,
+      "linkedin": false,
+      "messenger": false,
+      "pocket": false,
+      "qq": false,
+      "qzone": false,
+      "stumbleupon": false,
+      "twitter": false,
+      "viber": false,
+      "vk": false,
+      "weibo": false,
+      "whatsapp": false,
+      "all": ["github", "google", "weibo", "twitter", "facebook"]
+    },
+    "tbfed-pagefooter": {
+      "copyright": "Copyright &copy; 2025 Your Name",
+      "modify_label": "最后更新：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    }
+  }
+}
