@@ -1,6 +1,7 @@
 # Summary
 
 * [介绍](index.md)
+* [✨ 功能演示](docs/demo.md)
 
 ## 📚 技术文档
 * [技术概览](docs/tech/README.md)

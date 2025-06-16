@@ -31,7 +31,9 @@
     "gitbook-plugin-back-to-top-button": "^0.1.4",
     "gitbook-plugin-anchors": "^0.7.1",
     "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
+    "gitbook-plugin-page-treeview": "^1.0.1",
     "gitbook-plugin-tbfed-pagefooter": "^0.0.1",
-    "gitbook-plugin-sharing-plus": "^0.0.2"
+    "gitbook-plugin-sharing-plus": "^0.0.2",
+    "gitbook-plugin-toggle-chapters": "^0.0.3"
   }
 } 

@@ -1,0 +1,385 @@
+/* GitBook 自定义样式 - 实现完整的三栏布局 */
+
+/* 整体布局优化 */
+.book {
+    position: relative;
+}
+
+/* 顶部导航栏增强 */
+.book-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    z-index: 4;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 4px rgba(0,0,0,.1);
+}
+
+/* 主要内容区域适配顶部导航 */
+.book-body {
+    margin-top: 50px;
+}
+
+/* 左侧边栏样式优化 */
+.book-summary {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 300px;
+    height: calc(100vh - 50px);
+    background: #fafafa;
+    border-right: 1px solid #e7e7e7;
+    overflow-y: auto;
+    z-index: 2;
+}
+
+.book-summary ul.summary {
+    margin: 0;
+    padding: 0;
+}
+
+.book-summary ul.summary li {
+    list-style: none;
+    margin: 0;
+}
+
+.book-summary ul.summary li a {
+    display: block;
+    padding: 10px 15px;
+    color: #364149;
+    text-decoration: none;
+    border-bottom: none;
+    transition: background-color 0.2s ease;
+}
+
+.book-summary ul.summary li a:hover {
+    background: #f3f3f3;
+    text-decoration: none;
+}
+
+.book-summary ul.summary li.active > a {
+    background: #008cff;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* 章节层级样式 */
+.book-summary ul.summary li[data-level="1"] > a {
+    font-weight: 600;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.book-summary ul.summary li[data-level="2"] > a {
+    padding-left: 30px;
+    font-size: 13px;
+}
+
+.book-summary ul.summary li[data-level="3"] > a {
+    padding-left: 45px;
+    font-size: 12px;
+}
+
+/* 主内容区域布局 */
+.book-body .body-inner {
+    margin-left: 300px;
+    position: relative;
+}
+
+.page-wrapper {
+    padding: 20px 40px;
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+}
+
+/* 右侧目录导航 */
+.page-toc-button {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    z-index: 3;
+}
+
+.anchorjs-link {
+    color: #008cff !important;
+    text-decoration: none;
+}
+
+/* 页面内目录样式 */
+.anchor-navigation-ex-toc {
+    position: fixed;
+    right: 20px;
+    top: 150px;
+    width: 200px;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+    font-size: 12px;
+}
+
+.anchor-navigation-ex-toc .toc-item {
+    margin: 5px 0;
+}
+
+.anchor-navigation-ex-toc .toc-item a {
+    color: #666;
+    text-decoration: none;
+    display: block;
+    padding: 2px 0;
+    border-left: 2px solid transparent;
+    padding-left: 8px;
+}
+
+.anchor-navigation-ex-toc .toc-item a:hover {
+    color: #008cff;
+    border-left-color: #008cff;
+}
+
+.anchor-navigation-ex-toc .toc-item.active a {
+    color: #008cff;
+    border-left-color: #008cff;
+    font-weight: 600;
+}
+
+/* 代码块样式优化 */
+.page-wrapper pre {
+    background: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+    padding: 15px;
+    margin: 15px 0;
+    overflow-x: auto;
+}
+
+.page-wrapper code {
+    background: #f1f1f1;
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-size: 85%;
+}
+
+.page-wrapper pre code {
+    background: none;
+    padding: 0;
+}
+
+/* 表格样式 */
+.page-wrapper table {
+    border-collapse: collapse;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.page-wrapper table th,
+.page-wrapper table td {
+    border: 1px solid #e7e7e7;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.page-wrapper table th {
+    background: #f8f8f8;
+    font-weight: 600;
+}
+
+/* 搜索框样式 */
+.book-search {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.book-search input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 13px;
+    outline: none;
+}
+
+.book-search input:focus {
+    border-color: #008cff;
+    box-shadow: 0 0 0 2px rgba(0,140,255,.2);
+}
+
+/* 页面标题样式 */
+.page-wrapper h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #008cff;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.page-wrapper h2 {
+    color: #34495e;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.page-wrapper h3 {
+    color: #34495e;
+    margin-top: 25px;
+}
+
+/* 链接样式 */
+.page-wrapper a {
+    color: #008cff;
+    text-decoration: none;
+}
+
+.page-wrapper a:hover {
+    text-decoration: underline;
+}
+
+/* 分割线样式 */
+.splitter {
+    position: fixed;
+    left: 300px;
+    top: 50px;
+    bottom: 0;
+    width: 0;
+    border-left: 1px solid #e7e7e7;
+    z-index: 1;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+    .anchor-navigation-ex-toc {
+        display: none;
+    }
+    
+    .page-wrapper {
+        max-width: 100%;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .book-summary {
+        transform: translateX(-100%);
+        transition: transform 0.25s ease;
+    }
+    
+    .book-summary.open {
+        transform: translateX(0);
+    }
+    
+    .book-body .body-inner {
+        margin-left: 0;
+    }
+    
+    .page-wrapper {
+        padding: 15px;
+    }
+    
+    .book-header {
+        padding: 0 10px;
+    }
+}
+
+/* 章节折叠功能 */
+.toggle-chapters .fa-angle-right {
+    transition: transform 0.2s ease;
+}
+
+.toggle-chapters .expanded .fa-angle-right {
+    transform: rotate(90deg);
+}
+
+/* 页脚样式 */
+.page-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+    color: #666;
+}
+
+/* 编辑链接样式 */
+.edit-link {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background: #008cff;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 12px;
+    z-index: 3;
+}
+
+.edit-link:hover {
+    background: #0056b3;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 回到顶部按钮 */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #008cff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+    z-index: 3;
+}
+
+.back-to-top:hover {
+    background: #0056b3;
+}
+
+/* GitBook 品牌色彩优化 */
+.book-summary ul.summary li.active > a,
+.book-summary ul.summary li a:hover {
+    color: #008cff;
+    background: rgba(0,140,255,.1);
+}
+
+/* 加载动画 */
+.book-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+/* 打印样式 */
+@media print {
+    .book-summary,
+    .book-header,
+    .anchor-navigation-ex-toc,
+    .edit-link,
+    .back-to-top {
+        display: none !important;
+    }
+    
+    .book-body .body-inner {
+        margin-left: 0;
+    }
+    
+    .page-wrapper {
+        padding: 0;
+        max-width: none;
+    }
+} 
