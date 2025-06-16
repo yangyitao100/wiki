@@ -11,6 +11,8 @@
     "summary": "SUMMARY.md"
   },
   
+  "root": ".",
+  
   "plugins": [
     "-lunr",
     "-search", 
@@ -32,6 +34,9 @@
   ],
   
   "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    },
     "github": {
       "url": "https://github.com/yangyitao/wiki"
     },
