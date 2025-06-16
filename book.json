@@ -1,0 +1,100 @@
+{
+  "title": "我的知识库",
+  "description": "个人学习和工作笔记整理",
+  "author": "Your Name",
+  "language": "zh-hans",
+  "direction": "ltr",
+  "gitbook": ">=3.2.0",
+  
+  "structure": {
+    "readme": "index.md",
+    "summary": "SUMMARY.md"
+  },
+  
+  "plugins": [
+    "-lunr",
+    "-search", 
+    "search-plus",
+    "chapter-fold",
+    "expandable-chapters",
+    "code",
+    "copy-code-button",
+    "prism",
+    "advanced-emoji",
+    "github",
+    "edit-link",
+    "splitter",
+    "back-to-top-button",
+    "anchors",
+    "anchor-navigation-ex",
+    "theme-comscore",
+    "tbfed-pagefooter",
+    "sharing-plus",
+    "mermaid-gb3"
+  ],
+  
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/yangyitao/wiki"
+    },
+    "edit-link": {
+      "base": "https://github.com/yangyitao/wiki/edit/main",
+      "label": "编辑本页"
+    },
+    "sharing": {
+      "douban": false,
+      "facebook": false,
+      "google": false,
+      "hatenaBookmark": false,
+      "instapaper": false,
+      "line": false,
+      "linkedin": false,
+      "messenger": false,
+      "pocket": false,
+      "qq": false,
+      "qzone": false,
+      "stumbleupon": false,
+      "twitter": false,
+      "viber": false,
+      "vk": false,
+      "weibo": true,
+      "whatsapp": false,
+      "all": [
+        "weibo", "qq", "qzone", "douban"
+      ]
+    },
+    "tbfed-pagefooter": {
+      "copyright": "Copyright &copy; Your Name 2024",
+      "modify_label": "修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "anchor-navigation-ex": {
+      "showLevel": false,
+      "associatedWithSummary": true,
+      "printLog": false,
+      "multipleH1": true,
+      "mode": "float",
+      "showGoTop": true,
+      "float": {
+        "floatIcon": "fa fa-navicon",
+        "showLevelIcon": false,
+        "level1Icon": "fa fa-hand-o-right",
+        "level2Icon": "fa fa-hand-o-right",
+        "level3Icon": "fa fa-hand-o-right"
+      },
+      "pageTop": {
+        "showLevelIcon": false,
+        "level1Icon": "fa fa-hand-o-right",
+        "level2Icon": "fa fa-hand-o-right",
+        "level3Icon": "fa fa-hand-o-right"
+      }
+    },
+    "theme-default": {
+      "showLevel": true
+    }
+  },
+  
+  "variables": {
+    "version": "1.0.0"
+  }
+} 
