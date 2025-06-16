@@ -2,9 +2,64 @@
 title: 介绍
 ---
 
-# 欢迎来到我的知识库 📚
+# 我的知识库
 
-这里是我的个人知识库，记录学习笔记、工作经验和有用资源。
+个人学习和工作笔记整理，使用GitBook风格展示。
+
+## 🚀 自动部署
+
+本仓库已配置GitHub Actions，会自动将GitBook构建并部署到GitHub Pages。
+
+### 启用GitHub Pages
+
+1. 进入仓库的 Settings 页面
+2. 找到 Pages 选项
+3. Source 选择 "GitHub Actions"
+4. 保存设置
+
+### 自动构建流程
+
+每当向 `main` 分支推送代码时，GitHub Actions 会自动：
+
+1. 安装GitBook CLI和相关插件
+2. 构建GitBook静态页面
+3. 部署到GitHub Pages
+
+## 📖 本地开发
+
+如果需要本地预览，可以运行：
+
+```bash
+# 安装依赖
+npm install
+
+# 安装GitBook插件
+npm run install
+
+# 本地服务
+npm run serve
+```
+
+## 📝 编辑内容
+
+- 在 `docs/` 目录下编辑Markdown文件
+- 在 `SUMMARY.md` 中更新目录结构
+- 推送到GitHub后会自动更新网站
+
+## 🎨 GitBook配置
+
+GitBook的配置在 `book.json` 文件中，包含了以下功能：
+
+- 搜索功能
+- 代码高亮
+- 章节折叠
+- 编辑链接
+- 页面导航
+- 社交分享
+
+## 📮 联系方式
+
+如有问题请在Issues中反馈。
 
 ## 🎯 快速导航
 

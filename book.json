@@ -27,10 +27,8 @@
     "back-to-top-button",
     "anchors",
     "anchor-navigation-ex",
-    "theme-comscore",
     "tbfed-pagefooter",
-    "sharing-plus",
-    "mermaid-gb3"
+    "sharing-plus"
   ],
   
   "pluginsConfig": {

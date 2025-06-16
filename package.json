@@ -1,0 +1,37 @@
+{
+  "name": "my-wiki",
+  "version": "1.0.0",
+  "description": "个人学习和工作笔记整理",
+  "main": "index.js",
+  "scripts": {
+    "install": "gitbook install",
+    "build": "gitbook build",
+    "serve": "gitbook serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yangyitao/wiki.git"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  },
+  "dependencies": {
+    "gitbook-plugin-search-plus": "^1.0.3",
+    "gitbook-plugin-chapter-fold": "^0.0.4",
+    "gitbook-plugin-expandable-chapters": "^0.2.0",
+    "gitbook-plugin-code": "^0.1.0",
+    "gitbook-plugin-copy-code-button": "^0.0.2",
+    "gitbook-plugin-prism": "^2.4.0",
+    "gitbook-plugin-advanced-emoji": "^0.2.2",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-edit-link": "^2.0.2",
+    "gitbook-plugin-splitter": "^0.0.8",
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
+    "gitbook-plugin-tbfed-pagefooter": "^0.0.1",
+    "gitbook-plugin-sharing-plus": "^0.0.2"
+  }
+} 
